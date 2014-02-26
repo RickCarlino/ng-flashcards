@@ -1,14 +1,14 @@
-var titlexyzApp = angular.module('titlexyzApp', [
+var flashcardsApp = angular.module('flashcardsApp', [
   'ngRoute',
-  'titlexyzApp.controllers'
+  'flashcardsApp.controllers'
 ]);
-angular.module('titlexyzApp.controllers', []);
+angular.module('flashcardsApp.controllers', []);
 
-titlexyzApp.config(['$routeProvider', function($routeProvider) {
+flashcardsApp.config(['$routeProvider', function($routeProvider) {
     $routeProvider.
-    when('/menu1', {
-        templateUrl: 'partials/menu1.html',
-        controller: 'menu1Ctrl'
+    when('/cards', {
+        templateUrl: 'partials/cards.html',
+        controller: 'cardsCtrl'
     }).
     when('/main', {
         templateUrl: 'partials/main.html',
