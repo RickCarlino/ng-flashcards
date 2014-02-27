@@ -11,6 +11,7 @@ cardsCtrl.controller('cardsCtrl', ['$scope', function ($scope) {
   };
 
   $scope.destroyCard = function (index) {
+    console.log('boink!');
     return $scope.cards.splice(index, 1);
   };
 }]);
