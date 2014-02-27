@@ -1,10 +1,10 @@
-var flashcardsApp = angular.module('flashcardsApp', [
+var App = angular.module('App', [
   'ngRoute',
-  'flashcardsApp.controllers'
+  'App.controllers'
 ]);
-angular.module('flashcardsApp.controllers', []);
+angular.module('App.controllers', []);
 
-flashcardsApp.config(['$routeProvider', function($routeProvider) {
+App.config(['$routeProvider', function($routeProvider) {
     $routeProvider.
     when('/cards', {
         templateUrl: 'partials/cards.html',

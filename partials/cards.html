@@ -1,0 +1,52 @@
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="panel panel-default">
+          <!-- Default panel contents -->
+          <div class="panel-heading">
+            Add Cards
+          </div>
+          <div class="panel-body">
+            <form ng-submit="newCard()" focus-on-submit>
+              <input type="text" ng-model="front">
+              <input type="text" ng-model="back">
+              <input type="submit">
+            </form>
+          </div>
+          <!-- Table -->
+          <table class="table">
+            <thead>
+              <tr>
+                <th>
+                  #
+                </th>
+                <th>
+                  Front
+                </th>
+                <th>
+                  Back
+                </th>
+                <th>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="card in cards">
+                <td>
+                  1
+                </td>
+                <td>
+                  {{ card.front }}
+                </td>
+                <td>
+                  {{ card.back }}
+                </td>
+                <td>
+                  <button class='btn btn-danger btn-xs'><i class="fa fa-trash-o" ng-click=
+                    "destroyCard($index)"></i></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
