@@ -15,6 +15,7 @@
     <link href="css/simple-sidebar.css" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
 
+    <script src="lib/underscore.js"></script>
     <script src="lib/angular.js"></script>
     <script src="lib/angular-route.js"></script>
 
@@ -34,9 +35,11 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand"><a href="#">Menu</a>
                 </li>
-                <li><a href="#/main">Main</a>
+                <li><a href="#/main">Home</a>
                 </li>
                 <li><a href="#/cards">Manage Cards</a>
+                </li>
+                <li><a href="#/review">Review Cards</a>
                 </li>
             </ul>
         </div>
@@ -50,7 +53,6 @@
                 </h1>
             </div>
 
-            <!-- Keep all page content within the page-content inset div! -->
             <div class="page-content inset" ng-view>
                 <div class="row">
                     <div class="col-md-12">

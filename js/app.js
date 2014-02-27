@@ -10,9 +10,13 @@ App.config(['$routeProvider', function($routeProvider) {
         templateUrl: 'partials/cards.html',
         controller: 'cardsCtrl'
     }).
+    when('/review', {
+        templateUrl: 'partials/review.html',
+        controller: 'cardsCtrl'
+    }).
     when('/main', {
         templateUrl: 'partials/main.html',
-        controller: 'mainCtrl'
+        controller: 'cardsCtrl'
     }).
     otherwise({
         redirectTo: '/main'

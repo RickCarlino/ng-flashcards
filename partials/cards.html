@@ -3,7 +3,7 @@
         <div class="panel panel-default">
           <!-- Default panel contents -->
           <div class="panel-heading">
-            Add Cards
+            <h4>Add Cards</h4>
           </div>
           <div class="panel-body">
             <form ng-submit="newCard()" focus-on-submit>
@@ -31,18 +31,25 @@
             </thead>
             <tbody>
               <tr ng-repeat="card in cards">
+          <span {{todo.name}}</span>
                 <td>
-                  1
+                  {{ $index + 1}}
+                </td>
+                <td ng-dblclick="editCard(card)">
+                  <span ng-hide="card.editing">{{ card.front }}</span>
+                  <form ng-submit="doneEditingCard(card)" ng-show="card.editing">
+                    <input ng-model="card.front" ng-blur="card.editing = false;">
+                  </form>
+                </td>
+                <td ng-dblclick="editCard(card)">
+                  <span ng-hide="card.editing">{{ card.back }}</span>
+                  <form ng-submit="doneEditingCard(card)" ng-show="card.editing">
+                    <input ng-model="card.back" ng-blur="card.editing = false;">
+                  </form>
                 </td>
                 <td>
-                  {{ card.front }}
-                </td>
-                <td>
-                  {{ card.back }}
-                </td>
-                <td>
-                  <button class='btn btn-danger btn-xs'><i class="fa fa-trash-o" ng-click=
-                    "$parent.destroyCard($index)"></i></button>
+                  <button class='btn btn-danger btn-xs' ng-click=
+                    "$parent.destroyCard($index)"><i class="fa fa-trash-o"></i></button>
                 </td>
               </tr>
             </tbody>
