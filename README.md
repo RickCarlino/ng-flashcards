@@ -1,3 +1,3 @@
-# Angular Flashcards
+# Sandbox
 
-Hey, atleast it's not a todo app.
+Putzing around with some angular things.
