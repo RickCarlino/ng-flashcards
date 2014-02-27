@@ -8,6 +8,10 @@ Feel free to poke around and learn.
 
 If I have learned anything from this brief re-introduction to Angular it's that **Angular has come a long way in one year**. Angular is ready for production use, IMHO.
 
+# Demo / Screenshots
+
+[Click here to see a live demo](http://rickcarlino.github.io/ng-flashcards)
+
 ![Screen Shot 1](1.png "Screen Shot 1")
 ![Screen Shot 2](2.png "Screen Shot 2")
 
