@@ -1,0 +1,29 @@
+{
+  "name": "angular-flashcards",
+  "version": "0.0.1",
+  "description": "A simple flashcard app written in Angular.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rickcarlino/ng-flashcards.git"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "author": "Rick Carlino",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rickcarlino/ng-flashcards/issues"
+  },
+  "homepage": "https://github.com/rickcarlino/ng-flashcards",
+  "devDependencies": {
+    "karma-jasmine": "~0.1.5",
+    "karma": "~0.12.14",
+    "karma-chrome-launcher": "~0.1.3",
+    "karma-phantomjs-launcher": "~0.1.4"
+  }
+}
